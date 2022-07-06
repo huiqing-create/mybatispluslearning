@@ -1,0 +1,19 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///mplearn?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+logging:
+  level:
+    root : warn
+    hq.crud.mapper : trace
+  pattern:
+    console : '%p%m%n'   # 输出的日志格式
+
+
+mybatis-plus:
+  mapper-locations:
+    - com/wang/start/mapper/*.xml
